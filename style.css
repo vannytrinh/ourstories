@@ -1,0 +1,502 @@
+@import url("https://fonts.googleapis.com/css?family=Lora|Playfair+Display+SC|Playfair+Display|Parisienne");
+
+
+p {
+  font-family: 'Lora'; 
+  font-size:16px;
+}
+h1{
+  font-family: Playfair display sc;
+  color: #a5b0fe;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+}
+h2{
+  font-family: Playfair display sc;
+  background-color: #e5f2c9ff;
+  color: #999999;
+  font-size:20px;
+  font-weight:200;
+  text-align: center;
+  padding: 30px;
+}
+h3{
+  font-family: Playfair display sc;
+  background-color: #a5b0fe;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* stories */
+.story{
+  background-color: #eeeeeeff;
+  display: inline-block;
+  width: 250px;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 10px 10px 5px #d6daf6ff;
+}
+.group-stories{
+  display: flex;
+  justify-content: center;
+}
+.blurb{
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  margin-left: 75px;
+  margin-right:75px;
+}
+.title{
+  background-color: #e5f2c9ff;
+  padding: 10px;
+  margin-top: 1%;
+}
+.text{
+  border: solid #e5f2c9ff 5px;
+  font-size: 14px;
+}
+.tag {
+  font-size: 14px;
+  display: flex; 
+  justify-content: flex-end;
+  align-content: baseline;
+}
+
+/* navigation bar */
+.navigation{
+  background-color: #d6daf6ff;
+  /* formatting */
+  list-style-type: none;
+  margin: 0px;
+  padding: 1px; 
+  text-align:center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  /* font */
+  font-family: Playfair Display SC;
+  font-weight: 20px;
+  font-size: 16px;
+}
+.menu{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  width: 15%;
+  padding: 10px;
+}
+.menu:hover{
+  background-color: aliceblue;
+}
+.menu a {
+  display: block;
+  text-decoration: none;
+  color:black;
+}
+
+/* dropdown */
+.dropbtn {
+ display: flex;
+width: 25%;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  flex-wrap: nowrap;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ccccccff;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 35px;
+  text-decoration: none;
+  display: flex;
+  align-content: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:click .dropdown-content {
+  display: block;
+}
+
+
+/* quiz */
+.quiztwo {
+  background-color: #d6daf6ff;
+  color: white;
+}
+.quiztwo a{
+  text-decoration: none;
+  color: white;
+}
+.quiztwo:hover {
+  background-color: #f1f1f1
+}
+
+/* share your stories page */
+.share-stories-page-main-container{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.add-your-story-card{
+  background-color: #d6daf6ff;
+  display: block;
+  width: 250px;
+  height: 250px;
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 5px #eeeeeeff;
+}
+.des-to-user{
+  color: black;
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Lora';
+  font-size: 16px;
+}
+.share-your-story-label{
+  font-family: 'Lora';
+  font-size: 14px;
+  color: black;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.submit-story-btn{
+  background-color: #d6daf6ff;
+  border: 1px solid;
+  margin: 1px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Lora'; 
+  border-radius: 4px;
+}
+.the-story-added{
+  background-color: #eeeeeeff;
+  box-shadow: 10px 10px 5px #d6daf6ff;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  margin: 15px;
+}
+.sys-btn{
+  background-color: #d6daf6ff;
+  border: 1px solid #f1f1f1;
+  margin: 15px;
+  font-size: 14px;
+  font-family: 'Lora'; 
+  border-radius: 7px;
+  padding: 20px;
+}
+.sys-btn:hover{
+  background-color: aliceblue;
+}
+.sys-btn a{
+  text-decoration: none;
+  color: black;
+}
+
+/* personalized quiz page */
+.begin-quiz-btn{
+  width: 600px;
+  height: 100px;
+  background-color: #d6daf6ff;
+  font-family: lora;
+  border: solid #d6daf6ff 10px;
+  color: rgb(74, 75, 82);
+  font-size: 13px;
+  border-radius: 4px;
+  margin: 50px;
+}
+.beginBtn{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.begin-quiz-btn:hover{
+  background-color: aliceblue;
+}
+
+.quiz-question{
+  text-align:center;
+}
+.question{
+  font-size: 14px;
+  font-family: 'Lora'; 
+  font-style: bold;
+}
+.option{
+  background-color: #d6daf6ff;
+  border: 1px solid #f1f1f1;
+  margin: 15px;
+  font-size: 14px;
+  font-family: 'Lora'; 
+  border-radius: 7px;
+  padding: 10px;
+}
+.option:hover{
+  background-color: aliceblue;
+}
+
+.option a{
+  text-decoration: none;
+  color: black;
+}
+
+.group-btns{
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* current events page */
+.events{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.event{
+  border: solid #a5b0fe 5px;
+  padding: 20px;
+  margin: 25px;
+  width: 40%;
+}
+.ce-title{
+  font-family: Playfair Display;
+  font-size: 20px;
+  background: #a5b0fe;
+  margin-top:0px;
+  padding:30px;
+}
+.ce-title a {
+  text-decoration: none;
+  color: black;
+}
+.ce-title a:hover {
+  background-color:#d6daf6ff
+}
+.ce-description{
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+/* current event resources page */
+.ce-summary{
+  margin-top: 30px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.activities{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.activity{
+  border: solid #e5f2c9ff 5px;
+  margin-top: 40px;
+  width: 44%;
+  }
+
+.activity-top{
+  background-color: #e5f2c9ff;
+  font-size: 25px;
+  font-weight: bolder;
+  margin-top:0px;
+  margin-left:0px;
+  margin-right:0px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+.ah {
+  font-family: Playfair Display sc;
+}
+.activity img{
+  height: 50px;
+  margin-top:15px;
+}
+
+.head-activity {
+  padding: 10px;
+}
+.activity-head {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.links{
+  list-style-type: circle;
+  font-size: 18px;
+}
+.links a{
+  color: black;
+}
+
+.related{
+  border: solid #e5f2c9ff 5px;
+  margin: 3.5%;
+}
+
+.related-title{
+  background-color: #e5f2c9ff;
+  font-weight: bolder;
+  margin-top:0px;
+  margin-left:0px;
+  margin-right:0px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  font-family: playfair display sc;
+  padding: 10px;
+}
+
+.related-list{
+  list-style-type: circle;
+  font-size: 18px;
+}
+
+/* about us page */
+.info{ 
+  font-family:'Lora';
+  margin-left: 2em;
+  margin-right: 2em; 
+  font-size: 16px;
+  font-weight: 500;
+  color:black;
+  background: #d6daf6ff;
+  display: flex;
+  text-align: center;
+  padding: 10px;
+}
+
+.name{
+  color: black;
+  font-family: Playfair display sc;
+  text-align: center;
+  font-size: 20px;
+}
+
+.aboutUs{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ flex-wrap: nowrap;
+}
+
+.aboutme{
+  width: 20%; 
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 2px;
+}
+
+.abt img{
+  width: 80%;
+  height: auto;
+  flex: display;
+  align-self: center;
+  margin-top: 40px;
+  object-fit: cover;
+}
+
+.abt{
+  background-color: #d6daf6ff;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+/* 
+.profileimg{ 
+  width: 320px;
+  height: auto;
+  margin: auto;
+  object-fit: cover;
+} */
+
+/* ways to help page */
+.ways-to-help{
+  text-align: center;
+}
+.help-categories{
+  font-family: Playfair display sc;
+  color: #a5b0fe;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+}
+.help-social-issues{
+  font-family: 'Lora';
+  font-size: 17px;
+  font-weight: bold;
+}
+.help-p-text{
+  font-family: 'Lora';
+  font-size: 16px;
+  color: black;
+}
+.help-p-text a{
+  color: black;
+}
+.penguin {
+  background:#d6daf6ff;
+  padding: 20px;
+  color: gray;
+}
+
+
+/* true or false */
+.term{
+  display: block;
+  padding: 10px;
+  background:#d6daf6ff;
+}
+
+.term:hover{
+  background: aliceblue;
+  cursor: pointer;
+}
+
+.defn{
+  display: inline;
+  padding: 10px;
+  visibility: hidden;
+}
+
+.vocabs{
+  margin: 20px;
+}
